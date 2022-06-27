@@ -1,1 +1,1 @@
-# Sign-up-Page
+# A basic sign-up page for an imaginary website.
