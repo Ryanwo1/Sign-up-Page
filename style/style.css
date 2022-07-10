@@ -21,10 +21,28 @@ html, body {
 }
 
 #img-sidebar {
+    position: relative;
     height: 100vh;
     background-image: url('../img/photo-1585202900225-6d3ac20a6962.avif');
     background-size: 100%;
     grid-column: 1 / span 1;
+}
+
+#odin-img-container {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 70px;
+    min-width: 150px;
+    align-items: center;
+}
+
+#odin-img-container img {
+    height: 100px;
+    width: 100px;
 }
 
 #form-column {
