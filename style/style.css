@@ -32,8 +32,10 @@ html, body {
     display: flex;
     position: absolute;
     top: 20%;
-    left: 30%;
     justify-content: center;
+    height: 100px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
     color: whitesmoke;
     font-size: 70px;
     min-width: 150px;
