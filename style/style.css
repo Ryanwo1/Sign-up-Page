@@ -10,3 +10,7 @@
     font-family: NorseBold;
     src: url('../font/Norse-Bold.otf');
 }
+
+#grid-container {
+    display: grid;
+}
