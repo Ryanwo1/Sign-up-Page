@@ -3,10 +3,17 @@
     margin: 0;
     padding: 0;
     font-family: NorseBold;
+    --font-size-small: 15px;
+    --font-size-medium: 20px;
 }
 
 html, body {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
 }
 
 
@@ -47,8 +54,17 @@ html, body {
     width: 100px;
 }
 
+#sign-up-form-container {
+    background-color: white;
+}
+
+#product-description-box {
+    margin-left: 3rem;
+}
+
 #form-column {
     grid-column: 2 / span 2;
+    background-color: #F2F3F5;
 }
 
 #form-column > :first-child {
@@ -57,4 +73,31 @@ html, body {
 
 #form-column > * {
     margin-bottom: 10rem;
+}
+
+#form-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#log-in-box {
+    margin-left: 3rem;
+}
+
+#log-in-box button {
+    background-color: #596D48;
+    font-size: 16px;
+    color: whitesmoke;
+    padding: 1rem 3rem;
+    border-radius: 10%;
+}
+
+/* utility classes */
+
+.text-small {
+    font-size: var(--font-size-small);
+}
+
+.text-medium {
+    font-size: var(--font-size-medium);
 }
