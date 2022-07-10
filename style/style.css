@@ -7,14 +7,29 @@
     --font-size-medium: 20px;
 }
 
+
+
+
 html, body {
     margin: 0;
 }
+
+input, label {
+    display: block;
+}
+
 
 a {
     text-decoration: none;
     color: #596D48;
 }
+
+textarea {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    }
 
 
 @font-face {
@@ -56,6 +71,11 @@ a {
 
 #sign-up-form-container {
     background-color: white;
+    padding: 1rem 0;
+}
+
+#sign-up-form-container > * {
+    margin-left: 3rem;
 }
 
 #product-description-box {
@@ -72,16 +92,37 @@ a {
 }
 
 #form-column > * {
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
 }
 
 #form-grid-container {
     display: grid;
+    width: 70%;
+    height: 25vh;
     grid-template-columns: repeat(2, 1fr);
+    font-size: 18px;                    
 }
+
+#form-grid-container input {
+    width: 15rem;
+}
+
+#form-grid-container input:focus {
+    width: 15rem;
+    border: 3px solid #577bdf;
+}
+
+#form-grid-container input:invalid {
+    border: 1px solid red;
+}
+
 
 #log-in-box {
     margin-left: 3rem;
+}
+
+#log-in-box > * {
+    margin-bottom: 1rem;
 }
 
 #log-in-box button {
@@ -101,3 +142,12 @@ a {
 .text-medium {
     font-size: var(--font-size-medium);
 }
+
+.error-input {
+    border: 1px solid red;
+}
+
+div input + p {
+    color: red;
+}
+
