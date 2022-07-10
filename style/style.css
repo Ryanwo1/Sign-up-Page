@@ -30,3 +30,11 @@ html, body {
 #form-column {
     grid-column: 2 / span 2;
 }
+
+#form-column > :first-child {
+    margin-top: 5rem;
+}
+
+#form-column > * {
+    margin-bottom: 10rem;
+}
