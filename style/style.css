@@ -5,6 +5,10 @@
     font-family: NorseBold;
 }
 
+html, body {
+    margin: 0;
+}
+
 
 @font-face {
     font-family: NorseBold;
@@ -13,4 +17,11 @@
 
 #grid-container {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#img-sidebar {
+    height: 100vh;
+    background-image: url('../img/photo-1585202900225-6d3ac20a6962.avif');
+    background-size: 100%;
 }
