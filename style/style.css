@@ -17,11 +17,16 @@ html, body {
 
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 #img-sidebar {
     height: 100vh;
     background-image: url('../img/photo-1585202900225-6d3ac20a6962.avif');
     background-size: 100%;
+    grid-column: 1 / span 1;
+}
+
+#form-column {
+    grid-column: 2 / span 2;
 }
